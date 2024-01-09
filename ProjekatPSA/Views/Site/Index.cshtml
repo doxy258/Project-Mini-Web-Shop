@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+
+@using ProjekatPSA.Helpers
+
+
+
+<div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h6>Online Prodavnica</h6>
+                                    <h2>Pronađi svoj omiljeni proizvod</h2>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry. Lorem Ipsum has been the industry's
+                                        standard dummy text ever since the 1500s, when an unknown
+                                        printer took a galley of type and scrambled it to make a type specimen book.
+                                    </p>
+
+                                    <h2>Obuca</h2>
+                                    <p>Naziv: @ViewBag.Obuca.Naziv</p>
+                                    <p>Cena: @ViewBag.Obuca.Cena</p>
+                                    <p> Brend: @ViewBag.Obuca.Proizvodjac </p>
+                                    <p> Ime: @ViewBag.Obuca.Ime </p>
+                                    <p> Boja: @ViewBag.Obuca.Boja </p>
+                                    @CustomHelpers.CustomButton("Kupi sada")
+                                    <br /> <br />
+
+                                    <h2>Odeca</h2>
+                                    <p>Naziv: @ViewBag.Odeca.Naziv</p>
+                                    <p>Cena: @ViewBag.Odeca.Cena</p></p>
+                                    <p> Brend: @ViewBag.Obuca.Proizvodjac </p>
+                                    <p> Ime: @ViewBag.Obuca.Ime </p>
+                                    <p> Boja: @ViewBag.Obuca.Boja </p>
+                                    @CustomHelpers.CustomButton("Kupi sada")
+                                    <br /> <br />
+
+                                </div>
+                                <br /> <br />
+                                <div class="col-lg-12">
+                                    <div class="border-first-button scroll-to-section">
+                                        <a href="#contact">Vidi proizvode</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <img src="~/Images/slikabezpozadine1.png" style="height:550px; width:650px;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+
+<div id="contact" class="contact-us section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <h6>Kontakt</h6>
+                    <h4>Kontaktirajte <em>Nas</em></h4>
+                    <div class="line-dec"></div>
+                </div>
+            </div>
+            <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                <form id="contact" action="" method="post">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="contact-dec">
+                                <img src="~/Images/contact-dec-v3.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-7">
+                            <div class="fill-form">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="info-post">
+                                            <div class="icon">
+                                                <img src="~/Images/phone-icon.png" alt="">
+                                                <a href="#">+381 21 659-8024</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="info-post">
+                                            <div class="icon">
+                                                <img src="~/Images/email-icon.png" alt="">
+                                                <a href="#">shoponline@info.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="info-post">
+                                            <div class="icon">
+                                                <img src="~/Images/location-icon.png" alt="">
+                                                <a href="#">Beograd 11 000</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <fieldset>
+                                            <input type="text" name="name" id="name" placeholder="Ime" autocomplete="on" required>
+                                        </fieldset>
+                                        <fieldset>
+                                            <input type="text" name="email" id="email" placeholder="Vaš Email" required="">
+                                        </fieldset>
+                                        <fieldset>
+                                            <input type="text" name="subject" id="subject" placeholder="Naslov" autocomplete="on">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <fieldset>
+                                            <textarea name="message" type="text" class="form-control" id="message" placeholder="Poruka" required=""></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-button ">Pošalji poruku</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
